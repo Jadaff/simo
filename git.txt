@@ -1,0 +1,26 @@
+git config --global user.email "alwaysliao@qq.com"
+git config --global user.name "Jadaff"
+
+ssh-keygen -t rsa -b 4096 -C "alwaysliao@qq.com"
+clip < ~/.ssh/id_rsa.pub
+
+
+git status 
+git remote
+git log -5   -> 显示5次提交记录
+git push origin master
+git checkout filename  ->  切换分支或恢复工作树文件(覆盖本地文件)
+git checkout <commitID> <filename>  -> 回滚到指定commitID
+git reset HEAD <file>  -> unstage file
+
+git branch <branchName>  -> 新建分支
+git checkout <branchName> -> 切换分支
+git push --set-upstream origin <branchName>  -> push the current branch and set the remote as upstream
+git branch -d <branchName> -> 删除分支
+git push origin --delete <branchName>  -> 删除远程分支
+
+
+git rm <file> -> 删除文件
+git rm -r --cached <file>  -> only remove from the index
+git commit -> 提交删除
+
